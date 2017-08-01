@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C30BACE1F313B8700953FB9 /* Gabrielle.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C30BACD1F313B4D00953FB9 /* Gabrielle.ttf */; };
 		4C88FF161F3113A600ED4D2E /* AdaptiveTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C88FF151F3113A600ED4D2E /* AdaptiveTableViewController.swift */; };
 		4C88FF181F31140A00ED4D2E /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C88FF171F31140A00ED4D2E /* MatchTableViewCell.swift */; };
 		4C88FF1A1F312AE700ED4D2E /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C88FF191F312AE700ED4D2E /* Match.swift */; };
@@ -15,10 +16,10 @@
 		4CB37D281F30FD6200C07009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB37D261F30FD6200C07009 /* Main.storyboard */; };
 		4CB37D2A1F30FD6200C07009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB37D291F30FD6200C07009 /* Assets.xcassets */; };
 		4CB37D2D1F30FD6200C07009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB37D2B1F30FD6200C07009 /* LaunchScreen.storyboard */; };
-		4CB37D351F30FF2000C07009 /* Gabrielle.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4CB37D341F30FDBF00C07009 /* Gabrielle.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C30BACD1F313B4D00953FB9 /* Gabrielle.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gabrielle.ttf; sourceTree = "<group>"; };
 		4C88FF151F3113A600ED4D2E /* AdaptiveTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveTableViewController.swift; sourceTree = "<group>"; };
 		4C88FF171F31140A00ED4D2E /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
 		4C88FF191F312AE700ED4D2E /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		4CB37D291F30FD6200C07009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CB37D2C1F30FD6200C07009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CB37D2E1F30FD6200C07009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CB37D341F30FDBF00C07009 /* Gabrielle.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Gabrielle.ttf; path = ../../../Downloads/gabrielle_font_6456/Gabrielle.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 				4CB37D291F30FD6200C07009 /* Assets.xcassets */,
 				4CB37D2B1F30FD6200C07009 /* LaunchScreen.storyboard */,
 				4CB37D2E1F30FD6200C07009 /* Info.plist */,
-				4CB37D341F30FDBF00C07009 /* Gabrielle.ttf */,
+				4C30BACD1F313B4D00953FB9 /* Gabrielle.ttf */,
 			);
 			path = "Dynamic Typography";
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CB37D351F30FF2000C07009 /* Gabrielle.ttf in Resources */,
+				4C30BACE1F313B8700953FB9 /* Gabrielle.ttf in Resources */,
 				4CB37D2D1F30FD6200C07009 /* LaunchScreen.storyboard in Resources */,
 				4CB37D2A1F30FD6200C07009 /* Assets.xcassets in Resources */,
 				4CB37D281F30FD6200C07009 /* Main.storyboard in Resources */,
