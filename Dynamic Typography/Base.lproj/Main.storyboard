@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dcZ-hZ-m19">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Adaptive-->
+        <scene sceneID="fEn-R1-ps7">
+            <objects>
+                <viewController id="kY1-tE-aEY" customClass="AdaptiveLayoutViewController" customModule="Dynamic_Typography" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mCq-XG-j4P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="MIm-pt-hTD"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Adaptive" id="aJI-HW-qo7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4I-MG-apT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="564"/>
+        </scene>
+        <!--Dynamic-->
+        <scene sceneID="Gcg-ha-WbJ">
+            <objects>
+                <viewController id="xwg-fs-6e3" customClass="DynamicTypeViewController" customModule="Dynamic_Typography" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ed0-C7-Gt2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nif-ye-WgA" userLabel="Body Label">
+                                <rect key="frame" x="10" y="309" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E72-jd-45A">
+                                <rect key="frame" x="10" y="284.5" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E72-jd-45A" firstAttribute="leading" secondItem="uB9-Wz-nTL" secondAttribute="leading" constant="10" id="A1E-89-zDk"/>
+                            <constraint firstItem="uB9-Wz-nTL" firstAttribute="trailing" secondItem="E72-jd-45A" secondAttribute="trailing" constant="22" id="OEL-dY-U6A"/>
+                            <constraint firstItem="nif-ye-WgA" firstAttribute="leading" secondItem="uB9-Wz-nTL" secondAttribute="leading" constant="10" id="R9f-66-Hzk"/>
+                            <constraint firstItem="nif-ye-WgA" firstAttribute="firstBaseline" secondItem="E72-jd-45A" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="cos-4R-PUY"/>
+                            <constraint firstItem="uB9-Wz-nTL" firstAttribute="trailing" secondItem="nif-ye-WgA" secondAttribute="trailing" constant="22" id="fuw-QY-wT7"/>
+                            <constraint firstItem="nif-ye-WgA" firstAttribute="centerY" secondItem="uB9-Wz-nTL" secondAttribute="centerY" id="pDK-wT-bhw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uB9-Wz-nTL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dynamic" id="af3-ag-V3t"/>
+                    <connections>
+                        <outlet property="baselineConstraint" destination="cos-4R-PUY" id="qed-h9-Fq9"/>
+                        <outlet property="bodyLabel" destination="nif-ye-WgA" id="meq-dp-iVJ"/>
+                        <outlet property="titleLabel" destination="E72-jd-45A" id="x1r-y7-gZ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xey-0l-kos" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="-91"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Yky-B7-zyI">
+            <objects>
+                <tabBarController id="dcZ-hZ-m19" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oQM-8D-a2D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xwg-fs-6e3" kind="relationship" relationship="viewControllers" id="1yA-mP-BnW"/>
+                        <segue destination="kY1-tE-aEY" kind="relationship" relationship="viewControllers" id="bVv-UR-gQt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIw-P2-7J0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1596" y="236"/>
+        </scene>
+    </scenes>
+</document>
