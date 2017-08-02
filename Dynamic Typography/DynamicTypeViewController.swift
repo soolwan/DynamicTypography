@@ -47,11 +47,12 @@ class DynamicTypeViewController: UIViewController {
         bodyLabel.adjustsFontForContentSizeCategory = true
 
         titleLabel.font = systemTitleFont()
-//        titleLabel.font = dynamicTitleFont()
-//        titleLabel.font = customDynamicTitleFont()
-
         bodyLabel.font = systemBodyFont()
+
+//        titleLabel.font = dynamicTitleFont()
 //        bodyLabel.font = dynamicBodyFont()
+
+//        titleLabel.font = customDynamicTitleFont()
 //        bodyLabel.font = customDynamicBodyFont()
 
         titleLabel.text = K.title
