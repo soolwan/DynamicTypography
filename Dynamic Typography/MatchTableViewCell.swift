@@ -10,18 +10,6 @@ import UIKit
 
 class MatchTableViewCell: UITableViewCell {
 
-    @IBOutlet var matchStackView: UIStackView!
-    @IBOutlet var scoresStackView: UIStackView!
-    @IBOutlet var scoresWidthConstraint: NSLayoutConstraint!
-
-    @IBOutlet var playerOneLabel: UILabel!
-    @IBOutlet var playerTwoLabel: UILabel!
-
-    func configure(with match: Match) {
-        playerOneLabel.text = match.playerOne
-        playerTwoLabel.text = match.playerTwo
-    }
-
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
 
@@ -34,4 +22,16 @@ class MatchTableViewCell: UITableViewCell {
             scoresWidthConstraint.isActive = true
         }
     }
+
+    func configure(with match: Match) {
+        playerOneLabel.text = match.playerOne
+        playerTwoLabel.text = match.playerTwo
+    }
+
+    @IBOutlet var matchStackView: UIStackView!
+    @IBOutlet var scoresStackView: UIStackView!
+    @IBOutlet var scoresWidthConstraint: NSLayoutConstraint!
+
+    @IBOutlet var playerOneLabel: UILabel!
+    @IBOutlet var playerTwoLabel: UILabel!
 }
