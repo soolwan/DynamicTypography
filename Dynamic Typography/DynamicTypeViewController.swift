@@ -46,23 +46,23 @@ class DynamicTypeViewController: UIViewController {
         titleLabel.adjustsFontForContentSizeCategory = true
         bodyLabel.adjustsFontForContentSizeCategory = true
 
+        titleLabel.font = customDynamicTitleFont()
+        bodyLabel.font = customDynamicBodyFont()
+
+        titleLabel.font = dynamicTitleFont()
+        bodyLabel.font = dynamicBodyFont()
+
         titleLabel.font = systemTitleFont()
         bodyLabel.font = systemBodyFont()
-
-//        titleLabel.font = dynamicTitleFont()
-//        bodyLabel.font = dynamicBodyFont()
-
-//        titleLabel.font = customDynamicTitleFont()
-//        bodyLabel.font = customDynamicBodyFont()
 
         titleLabel.text = K.title
         bodyLabel.text = K.body
 
-        // Baseline constraints set in IB or code using System Spacing that responds to Dynamic Type.
-//        baselineConstraint.isActive = false // Deactivate the equivalent constraint set in IB.
-//
-//        bodyLabel.firstBaselineAnchor.constraintEqualToSystemSpacingBelow(
-//            titleLabel.lastBaselineAnchor, multiplier: 2.0).isActive = true
+        baselineConstraint.isActive = false // Deactivate the equivalent constraint set in IB.
+
+        // Vertical Baseline System Spacing Constraint. Adjusts with Dynamic Type!
+        bodyLabel.firstBaselineAnchor.constraintEqualToSystemSpacingBelow(
+            titleLabel.lastBaselineAnchor, multiplier: 1.0).isActive = true
     }
 
     @IBOutlet var titleLabel: UILabel!

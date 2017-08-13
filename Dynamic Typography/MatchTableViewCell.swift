@@ -13,6 +13,7 @@ class MatchTableViewCell: UITableViewCell {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
 
+        // UIContentSizeCategory in traits! Plus operator support.
         if traitCollection.preferredContentSizeCategory > .extraExtraExtraLarge {
             scoresWidthConstraint.isActive = false
             matchStackView.axis = .vertical
