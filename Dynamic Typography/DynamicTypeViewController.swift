@@ -33,12 +33,12 @@ class DynamicTypeViewController: UIViewController {
     // Custom Dynamic
 
     func customDynamicTitleFont() -> UIFont {
-        let customFont = UIFont(name: K.gabrielleFont, size: 28)!
+        let customFont = UIFont(name: K.gabrielleFont, size: 28)! // seed with a good size.
         return UIFontMetrics(forTextStyle: .title1).scaledFont(for: customFont)
     }
 
     func customDynamicBodyFont() -> UIFont {
-        let customFont = UIFont(name: K.gabrielleFont, size: 18)!
+        let customFont = UIFont(name: K.gabrielleFont, size: 18)! // seed with a good size.
         return UIFontMetrics(forTextStyle: .body).scaledFont(for: customFont)
     }
 
