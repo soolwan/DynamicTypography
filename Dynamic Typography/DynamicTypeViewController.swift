@@ -10,6 +10,10 @@ import UIKit
 
 class DynamicTypeViewController: UIViewController {
 
+    override func viewDidLoad() {
+        dynamicTypeDemo()
+    }
+
     // System
 
     func systemTitleFont() -> UIFont {
