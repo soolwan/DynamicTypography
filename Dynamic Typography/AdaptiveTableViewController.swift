@@ -13,11 +13,11 @@ class AdaptiveTableViewController: UITableViewController {
     private var matches: [Match] = []
 
     private func setupMatches() {
-        let matchData = [Match(playerOne: "Roger Federer", playerTwo: "Rafael Nadal"),
+        let matchData = [Match(playerOne: "Milos Raonic", playerTwo: "Jo-Wilfried Tsonga"),
+                         Match(playerOne: "Roger Federer", playerTwo: "Rafael Nadal"),
                          Match(playerOne: "Andy Murray", playerTwo: "Novak Djokovic"),
                          Match(playerOne: "Stan Wawrinka", playerTwo: "Marin Cilic"),
                          Match(playerOne: "Dominic Thiem", playerTwo: "Kei Nishikori"),
-                         Match(playerOne: "Milos Raonic", playerTwo: "Jo-Wilfried Tsonga"),
                          Match(playerOne: "Tomas Berdych", playerTwo: "Gael Monfils")]
 
         matches.append(contentsOf: matchData)
